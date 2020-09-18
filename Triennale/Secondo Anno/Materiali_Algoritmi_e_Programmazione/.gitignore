@@ -1,0 +1,19 @@
+*.pdf
+*.mp4
+*.jpg
+*.cbp
+*.depend
+*.layout
+*.o
+*.exe
+*.zip
+*.docx
+*.lnk
+*.url
+2019/Programmazione/Puntatori e strutture dati dinamiche/voli/*
+2019/Programmazione/Puntatori e strutture dati dinamiche/voli-ADT/*
+2019/Laboratori/*
+2019/Esame/*
+2019/Esame/Mio_Esame/Debug_Esame/*
+*Varie*
+*soluzioni*

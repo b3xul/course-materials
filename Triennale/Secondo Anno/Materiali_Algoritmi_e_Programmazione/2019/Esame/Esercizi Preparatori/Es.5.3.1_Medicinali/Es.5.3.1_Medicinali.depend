@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1580063516 source:c:\users\utente\desktop\es.5.3.1_medicinali\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Item.h"
+	"ST.h"
+	"list.h"
+
+1580059225 c:\users\utente\desktop\es.5.3.1_medicinali\st.h
+	"Item.h"
+
+1580052760 c:\users\utente\desktop\es.5.3.1_medicinali\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ST.h"
+
+1580059214 source:c:\users\utente\desktop\es.5.3.1_medicinali\st.c
+	<stdio.h>
+	<stdlib.h>
+	"ST.h"
+
+1580053604 source:c:\users\utente\desktop\es.5.3.1_medicinali\item.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Item.h"
+
+1580053590 c:\users\utente\desktop\es.5.3.1_medicinali\item.h
+
+1580063549 source:c:\users\utente\desktop\es.5.3.1_medicinali\list.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+
+1580063433 c:\users\utente\desktop\es.5.3.1_medicinali\list.h
+

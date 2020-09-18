@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1579779755 source:c:\users\utente\desktop\es_4.1.4_catalogo_di_prodotti\bst.c
+	<stdio.h>
+	<stdlib.h>
+	"Item.h"
+	"BST.h"
+
+1579777170 c:\users\utente\desktop\es_4.1.4_catalogo_di_prodotti\item.h
+	<stdio.h>
+
+1579780878 c:\users\utente\desktop\es_4.1.4_catalogo_di_prodotti\bst.h
+
+1579779977 source:c:\users\utente\desktop\es_4.1.4_catalogo_di_prodotti\item.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"Item.h"
+
+1579780878 source:c:\users\utente\desktop\es_4.1.4_catalogo_di_prodotti\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Item.h"
+	"BST.h"
+

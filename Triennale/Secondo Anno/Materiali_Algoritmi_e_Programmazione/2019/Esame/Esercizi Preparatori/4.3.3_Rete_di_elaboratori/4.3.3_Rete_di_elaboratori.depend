@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1579875284 source:c:\users\utente\desktop\4.3.3_rete_di_elaboratori\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Item.h"
+	"Graph.h"
+	"ST.h"
+
+1579874940 source:c:\users\utente\desktop\4.3.3_rete_di_elaboratori\st.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ST.h"
+
+1579868211 c:\users\utente\desktop\4.3.3_rete_di_elaboratori\st.h
+	"ITEM.h"
+
+1579874918 source:c:\users\utente\desktop\4.3.3_rete_di_elaboratori\graph.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<limits.h>
+	"Graph.h"
+
+1579873718 c:\users\utente\desktop\4.3.3_rete_di_elaboratori\graph.h
+	"ST.h"
+
+1579874532 c:\users\utente\desktop\4.3.3_rete_di_elaboratori\item.h
+
+1579874542 source:c:\users\utente\desktop\4.3.3_rete_di_elaboratori\item.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Item.h"
+

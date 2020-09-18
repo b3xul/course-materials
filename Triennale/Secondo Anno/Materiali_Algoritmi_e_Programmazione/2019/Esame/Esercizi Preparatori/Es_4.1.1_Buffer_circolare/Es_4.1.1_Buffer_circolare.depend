@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1579769303 source:c:\users\utente\desktop\es_4.1.1_buffer_circolare\item.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"Item.h"
+
+1579769257 c:\users\utente\desktop\es_4.1.1_buffer_circolare\item.h
+
+1579769760 source:c:\users\utente\desktop\es_4.1.1_buffer_circolare\queue.c
+	<stdio.h>
+	<stdlib.h>
+	"queue.h"
+
+1579769510 c:\users\utente\desktop\es_4.1.1_buffer_circolare\queue.h
+	"Item.h"
+
+1579769709 source:c:\users\utente\desktop\es_4.1.1_buffer_circolare\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Item.h"
+	"queue.h"
+

@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1579797854 source:c:\users\utente\desktop\es2_9.2.1_torneo\item.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"Item.h"
+
+1579797538 c:\users\utente\desktop\es2_9.2.1_torneo\item.h
+	<stdio.h>
+
+1579800248 source:c:\users\utente\desktop\es2_9.2.1_torneo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Item.h"
+	"PQ.h"
+
+1579796649 c:\users\utente\desktop\es2_9.2.1_torneo\pq.h
+
+1579799354 source:c:\users\utente\desktop\es2_9.2.1_torneo\pq.c
+	<stdlib.h>
+	<string.h>
+	"Item.h"
+	"PQ.h"
+

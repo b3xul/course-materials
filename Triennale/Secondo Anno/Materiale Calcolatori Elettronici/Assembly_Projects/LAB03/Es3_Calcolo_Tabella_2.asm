@@ -1,0 +1,50 @@
+NUM_RIGHE EQU 4
+NUM_COLONNE EQU 6
+.MODEL small
+.STACK
+.DATA
+TAB DW  154,123,109,86,4,?
+    DW  412,-23,-231,9,50,?
+    DW  123,-24,12,55,-45,?
+    DW  ?,?,?,?,?,?
+.CODE
+.STARTUP
+XOR AX,AX
+XOR BX,BX
+XOR SI,SI
+MOV CX,NUM_RIGHE
+
+cicloEsterno1:
+PUSH CX
+MOV CX,NUM_COLONNE-1
+    cicloInterno1:
+    ADD AX,TAB[BX][SI]
+    ADD SI,2
+    LOOP cicloInterno1
+MOV TAB[BX][SI],AX
+XOR AX,AX
+XOR SI,SI
+ADD BX,NUM_COLONNE*2
+POP CX
+LOOP cicloEsterno1
+
+XOR AX,AX
+XOR BX,BX
+XOR SI,SI
+MOV CX,NUM_COLONNE
+cicloEsterno2:
+PUSH CX
+MOV CX,NUM_RIGHE-1
+    cicloInterno2:
+    ADD AX,TAB[BX][SI]
+    ADD BX,NUM_COLONNE*2
+    LOOP cicloInterno2
+MOV TAB[BX][SI],AX
+XOR AX,AX
+XOR BX,BX
+ADD SI,2
+POP CX
+LOOP cicloEsterno2
+
+.EXIT
+END

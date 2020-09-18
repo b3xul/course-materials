@@ -1,0 +1,9 @@
+.MODEL small
+.STACK
+.DATA
+.CODE
+.STARTUP
+MOV AX,42
+.EXIT
+END
+

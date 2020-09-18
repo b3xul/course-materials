@@ -1,0 +1,11 @@
+es1
+switch in assembly
+modo1:
+sequenza di compare e je (=sequenza di if in c)
+
+modo2:
+tabella di jmp->molto meno codice
+
+in base al valore di una variabile eseguo solo uno dei casi
+
+Operatori booleani

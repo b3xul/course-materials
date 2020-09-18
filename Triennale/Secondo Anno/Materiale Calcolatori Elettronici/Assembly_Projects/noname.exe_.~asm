@@ -1,0 +1,49 @@
+PORTA EQU 80h
+PORTB EQU PORTA+1
+PORTC EQU PORTA+2
+CONTROL EQU PORTA+3
+DIM EQU 6
+
+#START=8255.EXE#
+
+.MODEL small
+.STACK
+.DATA
+vet_pari dw DIM DUP (?)
+vet_disp dw DIM DUP (?)
+ind_pari db 0
+ind_disp db 0
+temp DB ?
+flag DB 0
+.CODE
+.STARTUP
+MOV DX,CONTROL
+MOV AL,10010000b
+OUT DX,AL
+
+ciclo: CALL sorting
+JMP ciclo
+
+.EXIT
+
+PROC sorting
+
+IN AL,PORTA
+
+AND flag,1
+JZ msb  ;flag a 0: primo byte
+
+lsb: AND flag,0
+AND AL,1
+JNZ dispari ;ultimo bit a 1: dispari
+
+dispari: CMP ind_disp+1,DIM
+
+
+msb:OR flag,1
+MOV temp,AL
+
+RET
+ENDP sorting
+END
+

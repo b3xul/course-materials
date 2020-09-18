@@ -1,0 +1,34 @@
+DIM EQU 3
+.MODEL small
+.STACK
+.DATA
+riferimento DD 82C0B685h
+maschera    DD FFFC0000h
+address DD DIM DUP (82C028D1h,81C0276Ah,80E055ABh)
+soddisfano DB DIM DUP (1)   ;Tutti gli indirizzi soddisfano fino a prova contraria
+.CODE
+filtro PROC
+PUSH BP
+MOV BP,SP
+POP BP
+RET
+filtro ENDP
+
+.STARTUP
+push  82C0h  ; parte alta di indirizzo di riferimento
+push 0B685h  ; parte bassa di indirizzo di riferimento
+lea AX, address
+push AX
+lea AX, maschera
+push AX
+sub SP, 2 ; spazio riservato per risultato
+call filtro
+pop AX ; prelevamento risultato da stack
+add SP, 8
+
+.EXIT
+END
+
+
+
+; [SOURCE]: C:\Users\utente\Desktop\Assembly_Projects\LAB7\Es3_IP_Maschere.asm

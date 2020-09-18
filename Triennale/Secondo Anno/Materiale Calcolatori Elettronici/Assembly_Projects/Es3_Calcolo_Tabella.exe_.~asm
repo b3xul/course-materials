@@ -1,0 +1,43 @@
+NUM_RIGHE EQU 4
+NUM_COLONNE EQU 6
+.MODEL small
+.STACK
+.DATA
+TAB DW  154,123,109,86,4,?
+DW  412,-23,-231,9,50,?
+DW  123,-24,12,55,-45,?
+DW  ?,?,?,?,?,?
+.CODE
+.STARTUP
+XOR AX,AX
+XOR BX,BX
+XOR SI,SI
+
+cicloEsterno:
+MOV CX,NUM_RIGHE-1
+PUSH CX
+MOV CX,NUM_COLONNE-1
+cicloInterno:
+ADD AX,TAB[BX][SI]
+;ADD BX,TAB[SI][BX]
+ADD SI,2
+;CMP SI,((NUM_COLONNE-1)*2)      ;??
+;JNZ ciclo1
+LOOP cicloInterno
+;MOV TAB[BX][(NUM_COLONNE-1)*2],AX  ma magari usiamo SI
+MOV TAB[BX][SI],AX
+XOR AX,AX
+XOR SI,SI
+ADD BX,NUM_COLONNE*2
+POP CX
+LOOP cicloEsterno
+;CMP BX,NUM_COLONNE*NUM_RIGHE*2
+;JNZ cicloEsterno
+
+
+.EXIT
+END
+
+
+
+; [SOURCE]: C:\Users\utente\Desktop\Assembly_Projects\LAB3\Es3_Calcolo_Tabella.asm

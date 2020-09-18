@@ -1,0 +1,38 @@
+.MODEL small
+.STACK
+.DATA
+valore DW    1,  2,  5, 10, 20, 50, 100, 200
+N EQU ($-valore)/2
+monete DB  100, 23, 17,  0, 79, 48, 240, 211
+euro DW ?
+cent DW ?
+.CODE
+.STARTUP
+XOR SI,SI
+XOR DI,DI
+XOR BX,BX
+XOR CX,CX
+calcolo:
+XOR AH,AH
+MOV AL,monete[SI] ;AL Byte monete        (non si puo' fare DI*2 ovviamente)
+MUL valore[DI]    ;AX LSB Monete*valore temporaneo
+ADD BX,AX         ;BX LSB Monete*valore definitivo
+ADC CX,DX         ;DX MSB M*v temporaneo
+;CX MSB M*V definitivo
+ADD DI,2
+INC SI
+CMP SI,N
+JNZ calcolo
+
+MOV AX,BX
+MOV DX,CX
+MOV BX,100
+DIV BX
+MOV euro,AX
+MOV cent,DX
+.EXIT
+END
+
+
+
+; [SOURCE]: C:\Users\utente\Desktop\Assembly_Projects\LAB4\Es2_Calcolo_Monete.asm

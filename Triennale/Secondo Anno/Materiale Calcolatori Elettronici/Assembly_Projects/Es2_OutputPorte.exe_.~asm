@@ -1,0 +1,33 @@
+PORTA EQU 80h
+PORTB EQU PORTA+1
+PORTC EQU PORTA+2
+CONTROL EQU PORTA+3
+
+#START=8255.exe#
+.MODEL small
+.STACK
+.DATA
+
+.CODE
+.STARTUP
+MOV AL,10000000b
+OUT CONTROL,AL
+
+MOV AL,13
+ciclo: OUT PORTA,AL
+CMP AL,0
+JZ fine
+DEC AL
+OUT PORTB,AL
+CMP AL,0
+JZ fine
+DEC AL
+JMP ciclo
+
+fine:
+.EXIT
+END
+
+
+
+; [SOURCE]: C:\Users\utente\Desktop\Assembly_Projects\LAB9\Es2_OutputPorte.asm

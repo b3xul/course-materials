@@ -26,8 +26,8 @@ Javascript
 * [Javascript Exercises (Objects and Functions)](./slide/1-03-javascript-exercises.pdf)
 * [Asynchronouos JavaScript programming](./slide/1-04-javascript-async-programming.pdf)
 * [Javascript Exercises (Asynchronous programming)](./slide/1-05-javascript-async-exercises.pdf)
+* [The 'this' keyword](./slide/1-06-javascript-this.pdf)
 * Prototypes, Classes and Modules
-* The 'this' keyword
 
 Browsers and client-side applications
 
@@ -53,7 +53,9 @@ React
 * Client-Server interactions
 * React Router
 
-
-
 ## Laboratories
+
+* Lab 01: [Getting Started with NodeJS](./labs/L01-getting-started-node.pdf)
+  - [Proposed solution](https://github.com/polito-WA1-AW1-2021/lab1-node)
+* Lab 02: [Getting Started with HTML and CSS](./labs/L02-getting-started-html-css.pdf)
 
